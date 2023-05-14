@@ -1,0 +1,35 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "codeRepository": "https://github.com/Ang3licaValdo/KGproject.git",
+    "dateCreated": "2023-05-01",
+    "datePublished": "2023-05-14",
+    "name": "KGProject",
+    "identifier": "10.5281/zenodo.8475",
+    "description": "A knowledge graph based on scientific papers information\n  enriched with data from Wikidata and ROR.",
+    "applicationCategory": "Semantic Web",
+    "keywords": [
+        "semantic web",
+        "knowledge graph",
+        "scientific papers"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Angelica Sofpa",
+            "familyName": "Gonzalez Valdovinos",
+            "email": "angelica.gonzalez.valdovinos2@gmail.com"
+        },
+        {
+            "@type": "Person",
+            "givenName": "Roberto Mauricio",
+            "familyName": "Beltrán Vargas",
+            "email": "mauricio.ennui@gmail.com"
+        },
+        {
+            "@type": "Person",
+            "givenName": "Daniel",
+            "familyName": "Bakas Amuchástegui"
+        }
+    ]
+}
