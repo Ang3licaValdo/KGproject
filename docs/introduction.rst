@@ -7,5 +7,3 @@ the papers is the foundation of this graph, it’s also been enriched with
 information about authors obtained from Wikidata and about organizations
 from ROR.
 
-Commands
---------
