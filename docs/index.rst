@@ -1,6 +1,6 @@
-*******************************************************************************
-Software for Data Visualization obtained with text analysis tools documentation
-*******************************************************************************
+*********
+KGProject
+*********
 
 .. toctree::
     :caption: About
