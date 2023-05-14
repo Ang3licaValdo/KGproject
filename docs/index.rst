@@ -5,6 +5,6 @@ KGProject
 .. toctree::
     :caption: About
 
-    about
+    introduction
 
 
