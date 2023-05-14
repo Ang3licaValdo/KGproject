@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: KGproject
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Angélica Sofía
+    family-names: González Valdovinos
+    email: angelica.gonzalez.valdovinos2@gmail.com
+  - given-names: 'Roberto Mauricio '
+    family-names: Beltrán Vargas
+    email: mauricio.ennui@gmail.com
+  - given-names: 'Daniel '
+    family-names: 'Bakas Amuchástegui '
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.8475
+repository-code: 'https://github.com/Ang3licaValdo/KGproject.git'
+abstract: >-
+  A knowledge graph based on scientific papers information
+  enriched with data from Wikidata and ROR.
+keywords:
+  - semantic web
+  - knowledge graph
+  - scientific papers
+license: Apache-2.0
