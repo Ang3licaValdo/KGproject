@@ -2,7 +2,6 @@ site_name: KGProject
 site_url: https://example.com/
 nav:
     - Home: index.rst
-    - Requirements: requirements.rst
-    - User's guide: query.rst
+
 
 theme: readthedocs
