@@ -1,7 +1,7 @@
 site_name: KGProject
 site_url: https://example.com/
 nav:
-    - Home: introduction.md
+    - Home: introduction.rst
 
 
 theme: readthedocs
