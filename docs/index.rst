@@ -3,7 +3,7 @@ KGProject
 *********
 
 .. toctree::
-    :caption: About
+    :caption: Home
 
     introduction
 
