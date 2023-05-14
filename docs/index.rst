@@ -1,6 +1,7 @@
-*********
+**********
 KGProject
-*********
+**********
+
 
 .. toctree::
     :caption: Home
