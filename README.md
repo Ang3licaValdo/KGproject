@@ -11,7 +11,15 @@ You can make queries to our KG to get the next information about the 30 papers:
 - Title of the papers
 - Authors of the papers
 - Organizations acknowledged
-- Projects mentioned
+- Information about the authors such as:
+\n - The organization they're members of.
+   - Their date of birth
+   - Occupation
+   - Country of citinzenship
+   - Official website
+   - Gender
+   - Place of study
+   \n
 
 
 ## How to query it
