@@ -34,7 +34,7 @@ You can make queries to our KG to get the next information about the 30 papers:
 Our enriched knowledge graph is in a turtle file (.ttl), to get it and to be able to query it, you can download this repository and change directories until you are inside the 'compose' directory:
 
 ```
-cd ./development/docker/compose
+cd ./end point/docker/compose
 ```
 Then execute the next command:
 ```
