@@ -1,4 +1,7 @@
 [![DOI](https://zenodo.org/badge/596545346.svg)](https://zenodo.org/badge/latestdoi/596545346)
+
+[![Documentation Status](https://readthedocs.org/projects/kgproject/badge/?version=latest)](https://kgproject.readthedocs.io/en/latest/?badge=latest)
+
 # KGproject
 
 KGProject is a knowledge graph about scientific papers, it’s been enriched with
