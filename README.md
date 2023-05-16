@@ -33,12 +33,10 @@ Our enriched knowledge graph is in a turtle file (.ttl), to get it and to be abl
 
 ```
 cd ./development/docker/compose
-
 ```
 Then execute the next command:
 ```
 docker-compose up --build
-
 ```
 At the beginning of the execution of the prior command, you'll see something like this:
 ```
@@ -50,7 +48,6 @@ compose-jena-fuseki-1  |
 compose-jena-fuseki-1  | admin=zw2qhz63j5QfuIS
 compose-jena-fuseki-1  | 
 compose-jena-fuseki-1  | ###################################
-
 ```
 Make sure you keep that password.
 
@@ -61,7 +58,6 @@ Then head over to localhost:3030 on your browser and introduce the password, the
 To stop the containers use:
 ```
 docker-compose down
-
 ```
 
 ## Example queries
