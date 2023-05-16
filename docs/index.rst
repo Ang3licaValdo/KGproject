@@ -12,3 +12,7 @@ KGProject
 
     execute
 
+.. toctree::
+    :caption: Example queries
+
+    query
