@@ -12,14 +12,28 @@ You can make queries to our KG to get the next information about the 30 papers:
 - Authors of the papers
 - Organizations acknowledged
 - Information about the authors such as:
-\n - The organization they're members of.
+   - The organization they're members of.
    - Their date of birth
    - Occupation
    - Country of citinzenship
    - Official website
    - Gender
    - Place of study
-   \n
+- Information about the organizations and publishers acknowledged such as:
+   - The location
+   - Official website 
+   - ROR URI 
+- The probability of belonging to each topic.
 
+## How to get the .ttl file
+Our enriched knowlegded is in a turtle file (.ttl), to get it, you can download this repository and change directories until you are inside the 'compose' directory:
 
-## How to query it
+```
+cd ./development/docker/compose
+
+```
+Then execute the next command:
+```
+docker-compose up --build
+
+```
