@@ -23,6 +23,8 @@ You can make queries to our KG to get the next information about the 30 papers:
    - ROR URI 
 - The probability of belonging to each topic.
 
+*NOTE: Some information may not be found because it might not be available for the specific instance on the information sources used to enrich our KG.
+
 ## Requirements
 
 - Docker
