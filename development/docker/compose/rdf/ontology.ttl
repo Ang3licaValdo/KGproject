@@ -1,0 +1,390 @@
+@prefix : <http://www.project.com/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.project.com/> .
+
+<http://www.project.com/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.wikidata.org/prop/direct/P921
+wdt:P921 rdf:type owl:AnnotationProperty ;
+         rdfs:range wd:Q200801 .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.project.com/value
+:value rdf:type owl:ObjectProperty ;
+       rdfs:label "value" .
+
+
+###  http://www.wikidata.org/prop/direct/P106
+wdt:P106 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q482980 ;
+         rdfs:range wd:Q12737077 ;
+         rdfs:label "occupation" .
+
+
+###  http://www.wikidata.org/prop/direct/P123
+wdt:P123 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q13442814 ;
+         rdfs:range wd:Q2085381 ;
+         rdfs:label "publisher" .
+
+
+###  http://www.wikidata.org/prop/direct/P1659
+wdt:P1659 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q13442814 ;
+          rdfs:range wd:Q13442814 ;
+          rdfs:label "related property" .
+
+
+###  http://www.wikidata.org/prop/direct/P19
+wdt:P19 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q482980 ;
+        rdfs:range wd:Q1322263 ;
+        rdfs:label "place of birth" .
+
+
+###  http://www.wikidata.org/prop/direct/P21
+wdt:P21 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q482980 ;
+        rdfs:range wd:Q48264 ;
+        rdfs:label "gender" .
+
+
+###  http://www.wikidata.org/prop/direct/P27
+wdt:P27 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q482980 ;
+        rdfs:range wd:Q6256 ;
+        rdfs:label "country of citizenship" .
+
+
+###  http://www.wikidata.org/prop/direct/P31
+wdt:P31 rdf:type owl:ObjectProperty ;
+        rdfs:label "instance of" .
+
+
+###  http://www.wikidata.org/prop/direct/P355
+wdt:P355 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q13442814 ;
+         rdfs:range wd:Q1298668 .
+
+
+###  http://www.wikidata.org/prop/direct/P463
+wdt:P463 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q482980 ;
+         rdfs:range wd:Q43229 ;
+         rdfs:label "member of" .
+
+
+###  http://www.wikidata.org/prop/direct/P6782
+wdt:P6782 rdf:type owl:ObjectProperty ;
+          rdfs:label "ROR ID" .
+
+
+###  http://www.wikidata.org/prop/direct/P69
+wdt:P69 rdf:type owl:ObjectProperty ;
+        rdfs:domain wd:Q482980 ;
+        rdfs:range wd:Q174376 ;
+        rdfs:label "place of study" .
+
+
+###  http://www.wikidata.org/prop/direct/P7137
+wdt:P7137 rdf:type owl:ObjectProperty ;
+          rdfs:domain wd:Q13442814 ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( wd:Q43229
+                                     wd:Q482980
+                                   )
+                     ] ;
+          rdfs:label "acknowledged" .
+
+
+###  http://www.wikidata.org/prop/direct/P856
+wdt:P856 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q174376 ;
+         rdfs:range wd:Q22137024 ;
+         rdfs:label "official website" .
+
+
+###  http://www.wikidata.org/prop/direct/P921
+wdt:P921 rdf:type owl:ObjectProperty ;
+         rdfs:domain wd:Q13442814 .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.project.com/probability
+:probability rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:double ;
+             rdfs:label "probability" .
+
+
+###  http://www.wikidata.org/prop/direct/P159
+wdt:P159 rdf:type owl:DatatypeProperty ;
+         rdfs:label "headquarters location" .
+
+
+###  http://www.wikidata.org/prop/direct/P355
+wdt:P355 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.wikidata.org/prop/direct/P569
+wdt:P569 rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:date ;
+         rdfs:label "date of birth" .
+
+
+###  https://schema.org/keywords
+<https://schema.org/keywords> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain wd:Q200801 ;
+                              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.wikidata.org/entity/Q12737077
+wd:Q12737077 rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty wdt:P31 ;
+                                   owl:someValuesFrom wd:Q12737077
+                                 ] ;
+             rdfs:label "occupation" .
+
+
+###  http://www.wikidata.org/entity/Q1298668
+wd:Q1298668 rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty wdt:P31 ;
+                                  owl:someValuesFrom wd:Q1298668
+                                ] ;
+            rdfs:label "research project" .
+
+
+###  http://www.wikidata.org/entity/Q1322263
+wd:Q1322263 rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty wdt:P31 ;
+                                  owl:someValuesFrom wd:Q1322263
+                                ] ;
+            rdfs:label "place of birth" .
+
+
+###  http://www.wikidata.org/entity/Q13442814
+wd:Q13442814 rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                          owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty wdt:P7137 ;
+                                                                          owl:someValuesFrom wd:Q43229
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty wdt:P7137 ;
+                                                                          owl:someValuesFrom wd:Q482980
+                                                                        ]
+                                                                      )
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty wdt:P123 ;
+                                                          owl:someValuesFrom wd:Q2085381
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty wdt:P1659 ;
+                                                          owl:someValuesFrom wd:Q13442814
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty wdt:P355 ;
+                                                          owl:someValuesFrom wd:Q1298668
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty wdt:P921 ;
+                                                          owl:someValuesFrom wd:Q200801
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty wdt:P31 ;
+                                   owl:someValuesFrom wd:Q13442814
+                                 ] ;
+             rdfs:label "scholarly article" .
+
+
+###  http://www.wikidata.org/entity/Q17334923
+wd:Q17334923 rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty wdt:P31 ;
+                                   owl:someValuesFrom wd:Q17334923
+                                 ] ;
+             rdfs:label "physical location" .
+
+
+###  http://www.wikidata.org/entity/Q174376
+wd:Q174376 rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty wdt:P31 ;
+                                 owl:someValuesFrom wd:Q174376
+                               ] ;
+           rdfs:label "alma mater" .
+
+
+###  http://www.wikidata.org/entity/Q200801
+wd:Q200801 rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty wdt:P31 ;
+                                 owl:someValuesFrom wd:Q200801
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <https://schema.org/keywords> ;
+                                 owl:someValuesFrom xsd:string
+                               ] ;
+           rdfs:label "topic" .
+
+
+###  http://www.wikidata.org/entity/Q2085381
+wd:Q2085381 rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty wdt:P856 ;
+                                                         owl:someValuesFrom wd:Q22137024
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty wdt:P159 ;
+                                                         owl:someValuesFrom xsd:string
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty wdt:P31 ;
+                                  owl:someValuesFrom wd:Q2085381
+                                ] ;
+            rdfs:label "publisher" .
+
+
+###  http://www.wikidata.org/entity/Q22137024
+wd:Q22137024 rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty wdt:P31 ;
+                                   owl:someValuesFrom wd:Q22137024
+                                 ] ;
+             rdfs:label "official website" .
+
+
+###  http://www.wikidata.org/entity/Q2221906
+wd:Q2221906 rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty wdt:P31 ;
+                                  owl:someValuesFrom wd:Q2221906
+                                ] ;
+            rdfs:label "geographic location" .
+
+
+###  http://www.wikidata.org/entity/Q43229
+wd:Q43229 rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty wdt:P31 ;
+                                owl:someValuesFrom wd:Q43229
+                              ] ;
+          rdfs:label "organization" .
+
+
+###  http://www.wikidata.org/entity/Q48264
+wd:Q48264 rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty wdt:P31 ;
+                                owl:someValuesFrom wd:Q48264
+                              ] ;
+          rdfs:label "gender identity" .
+
+
+###  http://www.wikidata.org/entity/Q482980
+wd:Q482980 rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P106 ;
+                                                        owl:someValuesFrom wd:Q12737077
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P19 ;
+                                                        owl:someValuesFrom wd:Q1322263
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P21 ;
+                                                        owl:someValuesFrom wd:Q48264
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P27 ;
+                                                        owl:someValuesFrom wd:Q6256
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P463 ;
+                                                        owl:someValuesFrom wd:Q43229
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P69 ;
+                                                        owl:someValuesFrom wd:Q174376
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P856 ;
+                                                        owl:someValuesFrom wd:Q22137024
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty wdt:P569 ;
+                                                        owl:someValuesFrom xsd:date
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty wdt:P31 ;
+                                 owl:someValuesFrom wd:Q482980
+                               ] ;
+           rdfs:label "author" .
+
+
+###  http://www.wikidata.org/entity/Q6256
+wd:Q6256 rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty wdt:P31 ;
+                               owl:someValuesFrom wd:Q6256
+                             ] ;
+         rdfs:label "country" .
+
+
+###  http://www.wikidata.org/entity/Q63565260
+wd:Q63565260 rdf:type owl:Class ;
+             rdfs:label "Research Organization Registry ID" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+wdt:P355 rdfs:label "part of" .
+
+
+wdt:P921 rdfs:label "main subject" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
