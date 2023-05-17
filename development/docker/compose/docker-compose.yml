@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  rdfs:
+    build: ./rdf
+    volumes:
+      - type: bind
+        source: ./ttls
+        target: /rdf_dir/archives
+  jena-fuseki:
+    image: stain/jena-fuseki
+    ports:
+      - "3030:3030"
+    depends_on:
+      - rdfs
+    command: bash -c "sleep 10 && exec /jena-fuseki/fuseki-server --update --mem /ds"
